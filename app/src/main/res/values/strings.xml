@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Move puzzle</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="game">Move Puzzle</string>
+    <string name="game8">8 puzzle</string>
+    <string name="game15">15 puzzle</string>
+    <string name="game24">24 puzzle</string>
+    <string name="newGame">New game</string>
+    <string name="continueGame">Continue</string>
+    <string name="Help">Help</string>
+    <string name="exitGame">Exit</string>
+    <string name="MainMenu"><b>Main menu</b></string>
+    <string name="Score">Score: </string>
+    <string name="bestScore">Record: </string>
+    <string name="you_won">You have won! Congratulations!</string>
+    <string name="about_title">About:</string>
+    <string name="about_text"><b>Move puzzle</b>\n\nMove puzzle is a simple sliding game. Your goal is to arrange cells in ascending order (left to right, top to bottom) by moving puzzle pieces. The number in the game title presents the number of cells where each cell is numbered. One of the cells is not occupied. The player should move the numbered cells to the free cell by pressing them. The game goal is to move the cells of the box to achieve the ordering of numbers in ascending order. It is desirable to make as few as possible moves.\n\</string>
+    <string name="button">button</string>
+    <string name="buttonSound">Sound ON or OFF</string>
+    <string name="notSave">Saving missing! Press a new game.</string>
+    <string name="level15">15</string>
+    <string name="level24">24</string>
+    <string name="action_settings">Settings</string>
+</resources>

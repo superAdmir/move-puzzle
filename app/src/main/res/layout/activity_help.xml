@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+
+    android:padding="@dimen/Padding">
+
+    <TextView
+        android:id="@+id/tAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/Padding"
+        android:text="@string/about_text"
+        android:textColor="@color/logoTextColour"
+        android:textSize="@dimen/textSizeHelp" />
+
+    <Button
+        android:id="@+id/bMenu"
+        style="@style/bMenuStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/MainMenu" />
+
+</RelativeLayout>

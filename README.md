@@ -1,1 +1,1 @@
-# move-puzzle
+# Move puzzle
