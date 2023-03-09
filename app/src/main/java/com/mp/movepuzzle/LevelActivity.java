@@ -11,11 +11,20 @@ import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+
 public class LevelActivity extends Activity {
 
     private Sound sound;
     private int setButtonSound;
     private ImageButton bSound;
+    private AdView mAdView;
+    private InterstitialAd mInterstitialAd;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +62,17 @@ public class LevelActivity extends Activity {
 
         TextView tGame = (TextView) findViewById(R.id.tGame);
         tGame.setTypeface(digitalFont);
+
+        //Initialize the banner ads
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        //Load the banner ads
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
 
     View.OnClickListener onClickListener = new View.OnClickListener() {
